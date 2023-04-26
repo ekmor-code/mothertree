@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.mtLogo
+{
+  height: 20vmin;
+  padding-top: 25vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.video-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  height: 500vh;
+}
+
+#letters{
+  position: absolute;
+  size: 100px;
+  color: white;
+  z-index: 100;
+  width: 80%;
+  align-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@font-face{ 
+	font-family: 'Fragement-Glare';
+	src: url('fonts/PPFragment-GlareBlack.otf');
+	src: url('fonts/PPFragment-GlareBlack.otf?#iefix') format('embedded-opentype'),
+	     url('fonts/PPFragment-GlareBlack.woff') format('woff'),
+	     url('fonts/PPFragment-GlareBlack.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'Fragement-Sans-Regular';
+	src: url('fonts/PPFragment-SansRegular.otf');
+	src: url('fonts/PPFragment-SansRegular.otf?#iefix') format('embedded-opentype'),
+	     url('fonts/PPFragment-SansRegular.woff') format('woff'),
+	     url('fonts/PPFragment-SansRegular.ttf') format('truetype');
+}
+
+body
+{
+  font-family: 'Fragement-Sans-Regular', Courier, monospace;
+}
+
+h1, h2, h3
+{
+  font-family: 'Fragement-Glare', Courier, monospace;
+}
+
+h3{
+  font-size: 5em;
+}
